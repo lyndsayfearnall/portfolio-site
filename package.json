@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "Lyndsay Fearnall's portfolio website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyndsayfearnall/portfolio-site.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Lyndsay Fearnall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyndsayfearnall/portfolio-site_readme/issues"
+  },
+  "homepage": "https://github.com/lyndsayfearnall/portfolio-site_readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
