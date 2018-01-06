@@ -1,0 +1,13 @@
+footer{
+  color: $navy-blue;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.6em;
+  padding: 8px 0;
+  margin: 0 auto;
+  height: 5vh;
+}
+
+@media screen and (min-width: $mini-tablet-up){
+  font-size: 0.7em;
+}
