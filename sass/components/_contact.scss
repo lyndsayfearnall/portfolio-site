@@ -7,11 +7,39 @@
   }
 }
 
-#contact-p{
-  margin-top: 6px;
-}
-
 #textarea1{
   background-color: white;
   color: $navy-blue;
+  margin-bottom: 0px;
+  //padding-left: 10px;
 }
+
+#name, #email{
+  margin-bottom: 0px;
+}
+
+#contact-p, #form-name, #form-email, #form-text{
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+// form::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+//   color: white;
+// }
+//
+// textarea::-moz-placeholder { /* Firefox 19+ */
+//   color: white;
+// }
+//
+// textarea:-ms-input-placeholder { /* IE 10+ */
+//   color: white;
+// }
+//
+// textarea:-moz-placeholder { /* Firefox 18- */
+//   color: white;
+//   opacity: 1
+// }
+//
+// textarea::placeholder{
+//   color: white;
+// }
