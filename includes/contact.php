@@ -2,7 +2,7 @@
   require_once('admin/scripts/config.php');
 //Message Vars
 $msg = '';
-$msgClass = ''; //allows you to add class to message, style with css
+$msgClass = ''; //add class to message, style with css
 
  if(filter_has_var(INPUT_POST, 'action')){
    $name = $_POST['name'];
@@ -10,7 +10,7 @@ $msgClass = ''; //allows you to add class to message, style with css
    $street = $_POST['street'];
    $message = $_POST['message'];
 
-//check for required fields, also for empty street input
+//check for required fields and empty street input
   if(empty($street)){
   //Passed
     if(!empty($email) && !empty($name) && !empty($message)){
@@ -71,7 +71,7 @@ $msgClass = ''; //allows you to add class to message, style with css
           </div>
 
           <div class="input-field col s10 offset-s1" id="form-text">
-            <textarea placeholder="Message" id="textarea1" class="materialize-textarea" name="message"><?php echo isset($_POST['message']) ? $message : ''; ?>"</textarea>
+            <textarea placeholder="Message" id="textarea1" class="materialize-textarea" name="message"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
           </div>
           <div class="input-field col s6 offset-s3 center-align">
             <!--input type="submit" value="submit"-->
