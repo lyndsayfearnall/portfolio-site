@@ -3,10 +3,9 @@
   $user = "root";
   $pass = "root";
   $url = "localhost";
-  $db = "db_portfolio";
+  $db = "db_lyndsay_portfolio";
 
   //access piece to get in and out of db
-
   $link = mysqli_connect($url, $user, $pass, $db);
 
   //check connection, send out error message
