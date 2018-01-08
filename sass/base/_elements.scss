@@ -23,13 +23,13 @@ p{
 //bold styling for second word of headings
 .title-bold{
   font-weight: bold;
-  color: white;
 }
 
 //pink underline for headings
 .title-underline{
   border-bottom: 8px solid $pink;
-  width: 50%;
+  margin-top: 4px;
+  width: 25%;
 }
 
 //smaller montserrat font for subheadings
