@@ -2,7 +2,7 @@
   require_once('admin/scripts/config.php');
 //Message Vars
 $msg = '';
-$msgClass = ''; //allows you to add class to message, style with css
+$msgClass = ''; //add class to message, style with css
 
  if(filter_has_var(INPUT_POST, 'action')){
    $name = $_POST['name'];
@@ -10,7 +10,7 @@ $msgClass = ''; //allows you to add class to message, style with css
    $street = $_POST['street'];
    $message = $_POST['message'];
 
-//check for required fields, also for empty street input
+//check for required fields and empty street input
   if(empty($street)){
   //Passed
     if(!empty($email) && !empty($name) && !empty($message)){

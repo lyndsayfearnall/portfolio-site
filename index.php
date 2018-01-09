@@ -44,8 +44,13 @@
     </div>
   </footer>
 
+<<<<<<< HEAD
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="js/main.js"></script>
+=======
+<!-- <script src="node_modules/materialize-css/dist/js/materialize.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+>>>>>>> master
 
 </body>
 </html>
