@@ -1,3 +1,44 @@
 #home{
-  background-color: $teale;
+background: #3e2dcb; /* Old browsers */
+background: -moz-linear-gradient(top, #3e2dcb 0%, #2f2398 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #3e2dcb 0%,#2f2398 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #3e2dcb 0%,#2f2398 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e2dcb', endColorstr='#2f2398',GradientType=0 ); /* IE6-9 */
+height: 100vh;
+position: relative;
+  p{
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+#headphones{
+  position: absolute;
+  width: 33%;
+  left:0;
+  top:60%;
+}
+
+#logo{
+  margin-top: 60%;
+}
+
+#mug{
+  position: absolute;
+  bottom: 1em;
+  right: 0.6em;
+  width: 33%;
+}
+
+#notebook{
+  position: absolute;
+  width: 45%;
+  top: 80%;
+  left: 0;
+}
+
+#keyboard{
+  position: absolute;
+  width:50%;
+  top:0;
+  right: 0;
 }

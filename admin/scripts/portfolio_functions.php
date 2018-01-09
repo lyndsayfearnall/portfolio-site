@@ -8,10 +8,10 @@ include('connect.php');
   $result = mysqli_query($link, $query);
 
   //fetch data
-  $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
+  $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
   //print result
-  echo json_encode($row);
+  echo json_encode($rows);
 
   //close connection
   mysqli_close($link);

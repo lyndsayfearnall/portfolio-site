@@ -1,6 +1,7 @@
 body{
   color: white;
   font-family: $lato;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,7 +14,7 @@ h2{
 }
 
 p{
-  font-size: 0.875em;
+  font-size: 0.9em;
 }
 
 .hidden{
