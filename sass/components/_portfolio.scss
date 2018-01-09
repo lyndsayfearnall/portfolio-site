@@ -1,3 +1,40 @@
 #portfolio{
+  background-color: white;
+  h2{
+    color: $navy-blue;
+  }
+    h3{
+      font-size: 0.875em;
+      color: $grey;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+}
+
+#gallery-item{
+  margin-bottom: 20px;
+}
+
+.learn-more{
+  color: $grey;
+  display: inline;
+  border: 2px solid $grey;
+  padding: 10px 15px 10px 15px;
+  margin: 0 auto;
+}
+
+.powder-blue{
+  background-color: #CEF0F1;
+}
+
+.light-purple{
+  background-color: $light-purple;
+}
+
+.teale{
+  background-color: $teale;
+}
+
+.dark-purple{
   background-color: $dark-purple;
 }
