@@ -1,7 +1,7 @@
 <section id="about">
   <h2 class="hidden">About Me</h2>
   <div class="container row">
-    <div class="col s6">
+    <div class="col s6 m5 offset-m1">
       <h3 id="aboutHeading">I love creating websites that make people <span class="title-bold">happy</span></h3>
       <div class="title-underline"></div>
     </div>

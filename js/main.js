@@ -25,16 +25,4 @@ function getPortfolioData(){
 
 window.onload=getPortfolioData;
 
-//Modal
-let learnButtons = document.querySelectorAll('.learn-more');
-
-  function popModal(){
-    console.log("help");
-    }
-
-    learnButtons.forEach(function(learnButton) {
-      learnButton.addEventListener('click', popModal);
-  });
-
-
 })();

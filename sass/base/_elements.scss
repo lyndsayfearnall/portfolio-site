@@ -17,6 +17,10 @@ p{
   font-size: 0.9em;
 }
 
+a{
+  color: white;
+}
+
 .hidden{
   display: none;
 }
@@ -50,6 +54,18 @@ p{
   background-color: $pink;
 }
 
+.btn:visited{
+  background-color: $dark-pink;
+}
+
 .btn:hover {
+  background-color: $dark-pink;
+}
+
+.btn:active{
+  background-color: $dark-pink;
+}
+
+.btn:focus{
   background-color: $dark-pink;
 }

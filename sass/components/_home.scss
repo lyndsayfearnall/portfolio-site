@@ -1,4 +1,5 @@
-#home{
+
+#home-background{
 background: #3e2dcb; /* Old browsers */
 background: -moz-linear-gradient(top, #3e2dcb 0%, #2f2398 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #3e2dcb 0%,#2f2398 100%); /* Chrome10-25,Safari5.1-6 */
@@ -6,27 +7,34 @@ background: linear-gradient(to bottom, #3e2dcb 0%,#2f2398 100%); /* W3C, IE10+, 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e2dcb', endColorstr='#2f2398',GradientType=0 ); /* IE6-9 */
 height: 100vh;
 position: relative;
-  p{
-    text-align: center;
-    margin-top: 25px;
-  }
-}
-#headphones{
-  position: absolute;
-  width: 33%;
-  left:0;
-  top:60%;
 }
 
 #logo{
-  margin-top: 60%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 18%;
+  display: block;
+}
+
+#home{
+  p{
+    text-align: center;
+    margin-top: 5%;
+  }
+}
+
+#headphones{
+  position: absolute;
+  width: 20%;
+  left:0;
+  top:60%;
 }
 
 #mug{
   position: absolute;
   bottom: 1em;
   right: 0.6em;
-  width: 33%;
+  width: 25%;
 }
 
 #notebook{
@@ -41,4 +49,82 @@ position: relative;
   width:50%;
   top:0;
   right: 0;
+}
+
+
+//MEDIA QUERIES START HERE
+@media screen and (min-width: 750px){
+  #logo{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30%;
+  }
+  #home p{
+    font-size: 1.7em;
+  }
+  #notebook{
+    width: 30%;
+  }
+  #headphones{
+    width: 15%;
+    top: 65%;
+  }
+  #mug{
+    width: 17%;
+  }
+  #keyboard{
+
+  }
+}
+
+//mobile view LANDSCAPE
+@media screen
+  and (min-width: 320px)
+  //and (max-width: 1024px) //ipad mini
+  and (orientation: landscape) {
+  #headphones{
+    width: 15%;
+  }
+  #logo{
+    margin-top: 0px;
+    width: 40%;
+    margin-left: 30%;
+  }
+  #nav-button{
+    font-size: 3em;
+  }
+  #keyboard{
+    width: 25%;
+    margin-left: 30%;
+  }
+  #mug{
+    width: 15%;
+  }
+  #notebook{
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1020px){
+  #logo{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  #keyboard{
+    width: 30%;
+  }
+  #notebook{
+    width: 17%;
+  }
+  #headphones{
+    width:8%;
+    top:60%;
+  }
+  #mug{
+    width:12%;
+  }
+  #home p{
+    font-size: 1.4em;
+  }
 }

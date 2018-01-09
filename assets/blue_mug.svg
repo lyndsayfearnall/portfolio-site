@@ -4,17 +4,12 @@
 	 viewBox="0 0 81.8 66.5" style="enable-background:new 0 0 81.8 66.5;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#21B0BE;}
-	.st1{fill:#7CE5E5;}
-	.st2{fill:#FFFFFF;stroke:#21B0BE;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st3{fill:#7CE5E5;stroke:#21B0BE;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#21B0BE;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#D8FEFF;}
 </style>
-<image style="overflow:visible;" width="284" height="496" xlink:href="Screen Shot 2018-01-08 at 7.38.07 PM.png"  transform="matrix(1.1794 0 0 1.1794 -248.6471 -510.6471)">
-</image>
 <g id="outline-stroke">
 	<g id="mug_1_">
 		<path class="st0" d="M20.5,62.5C4.3,55.3-2.9,36.2,4.3,20S30.6-3.6,46.7,3.6s23.4,26.2,16.1,42.5S36.6,69.7,20.5,62.5z M46.1,5
-			C30.7-1.8,12.7,5.2,5.8,20.7s0,33.6,15.3,40.5s33.5-0.2,40.3-15.6S61.4,11.9,46.1,5z"/>
+			C30.7-1.8,12.7,5.2,5.8,20.7s0,33.6,15.3,40.5S54.6,61,61.4,45.6S61.4,11.9,46.1,5z"/>
 		<path id="handle" class="st0" d="M73.5,56.3l-13.2-5.9c-0.4-0.2-0.6-0.7-0.4-1.1l3.7-8.3c0.2-0.4,0.7-0.6,1.1-0.4l13.2,5.9
 			c0.4,0.2,0.6,0.7,0.4,1.1l-3.7,8.3C74.5,56.3,74,56.5,73.5,56.3z"/>
 		<path id="tea" class="st1" d="M44.8,7.8C31,1.6,14.7,7.9,8.5,21.9s0,30.3,13.8,36.5s30.1-0.1,36.4-14.1
