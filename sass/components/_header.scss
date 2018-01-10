@@ -13,7 +13,12 @@
 }
 
 #nav-container{
-  background-color: $blue;
+  // background-color: $blue;
+  background: #3e2dcb; /* Old browsers */
+  background: -moz-linear-gradient(top, #3e2dcb 0%, #2f2398 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3e2dcb 0%,#2f2398 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3e2dcb 0%,#2f2398 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e2dcb', endColorstr='#2f2398',GradientType=0 ); /* IE6-9 */
   text-transform: uppercase;
   font-family: $ms;
   font-size: 2em;
@@ -22,24 +27,51 @@
   height: 100vh;
   width: 100%;
   top: 0;
+  z-index: 500;
   display: none;
+  overflow: scroll;
   a{
     color: white;
+  }
+}
+
+#nav{
+  margin-top: 35%;
+  li{
+    margin-top: 10%;
   }
 }
 
 #nav-close{
   color: $pink;
   cursor: pointer;
-  font-size: 4.375em;
+  font-size: 1em;
+  margin-top: 3%;
 }
 
-//small tablet
-// @media only screen
-//   and (min-width: 751px)
-//   and (max-width: 1024px)
-//   and (orientation: landscape) {
-//   #nav-button{
-//     font-size: 7em;
-//   }
-//   }
+@media screen and (min-width: 750px){
+  #nav-button{
+    font-size: 6em;
+  }
+  #nav-close{
+    font-size: 2em;
+  }
+  #nav {
+    margin-top: 20%;
+  li{
+    font-size:2em;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  #nav-button{
+    margin-left: 3px;
+  }
+  #nav{
+    margin-top: 3%;
+    li{
+      font-size:1.5em;
+    }
+  }
+}

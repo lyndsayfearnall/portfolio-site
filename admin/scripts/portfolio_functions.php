@@ -15,9 +15,9 @@ if (isset($_GET["allProjects"])){
 }
 
 if (isset($_GET["project"])){
-  //$project = $_GET["project"];
+  $project = $_GET["project"];
 
-  $query = "SELECT * FROM tbl_projects WHERE project_id=1";
+  $query = "SELECT * FROM tbl_projects WHERE project_id = '$project'";
 
   $result = mysqli_query($link, $query);
 

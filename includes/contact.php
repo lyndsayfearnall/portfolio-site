@@ -43,7 +43,7 @@ $msgClass = ''; //add class to message, style with css
 
       <div class="col s10 offset-s1">
         <p class="accent-text">Drop me a line, any time.</p>
-        <p id="contact-p">Whether you're interested in working together, or if you just want to send me a funny video of your dog, I'd love to hear from you!</p>
+        <p id="contact-p">Whether you're interested in working together, or if you just want to tell me what you think about my site, I'd love to hear from you!</p>
       </div>
     </div>
 

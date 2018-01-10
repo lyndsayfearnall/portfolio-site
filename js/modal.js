@@ -1,24 +1,15 @@
 (function(){
-  // //Modal
-  // let learnButtons = document.querySelectorAll('.learn-more');
-  //
-  //   function popModal(){
-  //     console.log("help");
-  //     }
-  //
-  //     learnButtons.forEach(function(learnButton) {
-  //       learnButton.addEventListener('click', popModal, false);
-  //   });
 
-let buttons = document.querySelectorAll('.learn-more')
+  //let //closelightbox = document.querySelector('#close-modal');
 
-  function button (){
-    console.log('button');
-  }
 
-  buttons.forEach(function(button){
-    button.addEventListener('click', button, false);
-    console.log(button);
-  });
 
+      //modal= document.querySelector('#modal');
+
+  // function closeLightbox(){
+  //   //modal.style.display="none";
+  //   console.log("KEEP IT UP");
+  // }
+
+    // closelightbox.addEventListener('click', closeLightbox, false);
 })();

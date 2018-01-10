@@ -12,7 +12,7 @@ function getPortfolioData(){
         <div id="gallery-item" class="col s12 l6 ${project.bckgrd_class}">
           <h3>${project.project_name}</h3>
           <img src="images/${project.project_image1}" alt="Desktop image of ${project.project_name} website" width="100%">
-          <div class="learn" data-index= "${project.project_id}">Learn More</div>
+          <div class="learn" id= "${project.project_id}">Learn More</div>
         </div>
         `;
       });
@@ -22,8 +22,9 @@ function getPortfolioData(){
       let buttons = document.querySelectorAll('.learn');
           modal = document.querySelector('#modal');
       //
-        function getProject(){
-          const url = 'admin/scripts/portfolio_functions.php?project=';
+        function getProject(e){
+          const url = 'admin/scripts/portfolio_functions.php?project=' + this.id;
+          //console.log(this.id);
 
           fetch(url)
             .then((resp) => resp.json())
@@ -31,23 +32,26 @@ function getPortfolioData(){
               let output = '';
               output +=`
               <i class="material-icons" id="close-modal">close</i>
-              <h3>${data.project_name}</h3>
-              <img src="images/${data.project_image1}" alt="Desktop image of ${data.project_name} website" width="100%">
-              <img src="images/${data.project_image2}" alt="iPad images of ${data.project_name} website" width="100%">
-              <img src="images/${data.project_image3}" alt="iPhone image of ${data.project_name} website" width="100%">
+              <h3 class="lightbox-title">${data.project_name}</h3>
+              <div class="accent-underline"></div>
               <p>${data.project_description}</p>
+              <div class="col s12 ${data.bckgrd_class} lightbox-img"><img src="images/${data.project_image1}" alt="Desktop image of ${data.project_name} website" width="80%"></div>
+              <div class="col s12 ${data.bckgrd_class} lightbox-img"><img src="images/${data.project_image2}" alt="iPad images of ${data.project_name} website" width="80%"></div>
+              <div class="col s12 ${data.bckgrd_class} lightbox-img"><img src="images/${data.project_image3}" alt="iPhone image of ${data.project_name} website" width="80%"></div>
               `;
 
               modal.innerHTML = output;
-              //console.log(data.project_name);
+              modal.style.display="block";
+              window.scrollTo(0,0);
+              document.body.style.overflow="hidden";
             });
         }
         buttons.forEach(function(button, index) {
           button.addEventListener('click', getProject);
         });
       //end getProject
+
     });
-    
   }
   window.onload=getPortfolioData;
 

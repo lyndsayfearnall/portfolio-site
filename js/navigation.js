@@ -5,14 +5,16 @@
       pages = document.querySelectorAll('.nav-list');
 
       function popUpNav(){
-        //console.log("Hey Gurl")
-        navCon.style.display="inline";
+        navCon.style.display="block";
+        window.scrollTo(0,0);
+        document.body.style.overflow="hidden";
       }
 
       navMenu.addEventListener('click', popUpNav, false);
 
       function closeNav(){
         navCon.style.display="none";
+        document.body.style.overflow="auto";
       }
 
       pages.forEach(function(page){
