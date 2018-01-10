@@ -6,9 +6,10 @@
   </div>
 </header>
 
-<div class="row" id="nav-container">
+<div class="container" id="nav-container">
+
   <div class="col s12">
-    <i class="material-icons" id="nav-close">close</i>
+      <i class="material-icons" id="nav-close">close</i>
     <div id="nav">
       <ul class="center-align">
         <li><a href='#home' class="nav-list">Home</a></li>
@@ -18,4 +19,5 @@
       </ul>
     </div>
   </div>
+
 </div>

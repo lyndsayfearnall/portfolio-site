@@ -1,12 +1,12 @@
 <section id="about">
   <h2 class="hidden">About Me</h2>
   <div class="container row">
-    <div class="col s6 m5 offset-m1">
+    <div class="col s6 m5 offset-m1 l3 offset-l2">
       <h3 id="aboutHeading">I love creating websites that make people <span class="title-bold">happy</span></h3>
       <div class="title-underline accent-underline"></div>
     </div>
     <div class="col s6 m5 offset-m1" id="aboutImg">
-      <img src="images/lyndsay_01.png" alt="A stupid picture of me holding an ice cream cone...">
+      <img src="images/me.jpg" alt="A stupid picture of me holding an ice cream cone..." id="me">
     </div>
     <div class="col s12 m10 offset-m1" id="aboutMeTex">
       <p>I’m a bit of a perfectionist with a passion for design. Currently, I’m a student in Fanshawe College’s Interactive Media Design program, where I am learning how use digital media platforms to design and build beautiful responsive websites.</p>

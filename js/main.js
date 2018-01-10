@@ -45,11 +45,24 @@ function getPortfolioData(){
               window.scrollTo(0,0);
               document.body.style.overflow="hidden";
             });
+
+            // add close event for modal
+            setTimeout(function() {
+              let closelightbox = document.querySelector('#close-modal');
+            closelightbox.addEventListener('click', closeLightbox, false);
+          }, 500);
+
         }
         buttons.forEach(function(button, index) {
           button.addEventListener('click', getProject);
         });
       //end getProject
+
+      function closeLightbox(){
+        modal.style.display="none";
+        document.body.style.overflow="auto";
+        console.log("test");
+      }
 
     });
   }
