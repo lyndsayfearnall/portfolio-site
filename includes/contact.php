@@ -36,7 +36,7 @@ $msgClass = ''; //add class to message, style with css
   <div class="container">
     <div class="row no-margin-bottom" id="contact-text">
       <div class="col s12">
-        <h2>Say <span class="title-bold">Hello</span>
+        <h2>Say <span class="title-bold">hello</span>
           <div class="title-underline"></div>
         </h2>
       </div>
@@ -71,15 +71,15 @@ $msgClass = ''; //add class to message, style with css
           </div>
 
           <div class="input-field col s10 offset-s1" id="form-text">
-            <textarea placeholder="Message" id="textarea1" class="materialize-textarea" name="message"><?php echo isset($_POST['message']) ? $message : ''; ?>
-            </textarea>
+            <textarea placeholder="Message" id="textarea1" class="materialize-textarea" name="message"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
           </div>
+
+
           <div class="input-field col s6 offset-s3 center-align">
-            <!--input type="submit" value="submit"-->
-            <button class="btn waves-effect waves-light" type="submit" name="action" id="sumbit">Send
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="sumbit"> Send
               <i class="material-icons right">send</i>
             </button>
-          </div>
+
         </div>
       </form>
     </div>

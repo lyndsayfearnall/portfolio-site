@@ -8,8 +8,13 @@
     </div>
   </div>
 
-    <div class="col s12" id="project-con">
+    <div class="row" id="project-con">
       <!--data goes here-->
+    </div>
+
+
+    <div class="row" id="modal">
+      <!--modal goes here-->
     </div>
 
 </section>

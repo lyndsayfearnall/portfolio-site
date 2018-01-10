@@ -3,7 +3,7 @@
   <div class="container row">
     <div class="col s6 m5 offset-m1">
       <h3 id="aboutHeading">I love creating websites that make people <span class="title-bold">happy</span></h3>
-      <div class="title-underline"></div>
+      <div class="title-underline accent-underline"></div>
     </div>
     <div class="col s6" id="aboutImg">
       <img src="images/lyndsay_01.png" alt="A stupid picture of me holding an ice cream cone...">
@@ -17,7 +17,7 @@
     <div class="container row">
       <div class="col s12">
         <h3>What I <span class="title-bold">Do</span></h3>
-        <div class="title-underline"></div>
+        <div class="title-underline accent-underline" id="do-underline"></div>
         <p>I offer a variety of web services including custom responsive website design, front-end website development, and branding.  Whether you are looking to update your existing online presence or start from scratch, I can help you to reach your customers and communicate your message. </p>
       </div>
     </div>

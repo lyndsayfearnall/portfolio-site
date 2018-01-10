@@ -3,11 +3,20 @@ footer{
   text-transform: uppercase;
   text-align: center;
   font-size: 0.6em;
-  padding: 8px 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
   margin: 0 auto;
-  height: 5vh;
+  p{
+    margin: 10px 0 10px 0;
+    font-size: 1em;
+    font-family: $ms;
+  }
 }
 
 @media screen and (min-width: $mini-tablet-up){
-  font-size: 0.7em;
+    footer{
+      p{
+        font-size: 1.3em;
+      }
+    }
 }

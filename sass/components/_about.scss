@@ -26,9 +26,20 @@ h3{
   h3{
     text-align: center;
     letter-spacing: 1px;
+    margin-bottom: 5px;
   }
   p{
     font-weight: 300;
-    margin-bottom: 1.6em;
+    margin-bottom: 2em;
   }
+}
+
+.accent-underline{
+  width: 50px;
+  border-bottom: 4px solid $pink;
+}
+
+#do-underline{
+  width: 15%;
+  margin-left: 42.5%;
 }

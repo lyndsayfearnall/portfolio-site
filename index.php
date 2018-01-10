@@ -41,7 +41,7 @@
 
 <!--Footer Section-->
 
-  <footer class="footer-copyright">
+  <footer>
     <div class="container">
       <p> &copy
         <?php echo date('Y'); ?>
