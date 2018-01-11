@@ -2,16 +2,25 @@
 include('connect.php');
 
 if (isset($_GET["allProjects"])){
-  //create query
-  $query = "SELECT * FROM tbl_projects";
-  //get result
-  $result = mysqli_query($link, $query);
-  // fetch data
-  $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
-  //print result
-  echo json_encode($row);
-  //close connection
-  mysqli_close($link);
+
+    $query = "SELECT * FROM tbl_projects";
+
+    //get result
+    $result = mysqli_query($link, $query);
+
+    //group results together
+    $grpResult = "";
+    echo "[";
+    while($row = mysqli_fetch_assoc($result)){
+      $jsonResult= json_encode($row);
+      $grpResult .= $jsonResult.",";
+    }
+
+    echo substr($grpResult, 0, -1);
+    echo "]";
+
+    //close connection
+    mysqli_close($link);
 }
 
 if (isset($_GET["project"])){

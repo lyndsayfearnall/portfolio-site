@@ -1,7 +1,7 @@
 (function(){
 
-function getPortfolioData(){
-  const url = 'admin/scripts/portfolio_functions.php?allProjects=';
+  function getPortfolioData(){
+    const url = 'admin/scripts/portfolio_functions.php?allProjects=';
 
   fetch(url)
     .then((resp) => resp.json())
@@ -25,6 +25,7 @@ function getPortfolioData(){
       });
     });
   }
+
   window.onload=getPortfolioData;
 
   let modal = document.querySelector('#modal');
