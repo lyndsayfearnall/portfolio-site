@@ -1,7 +1,7 @@
 (function(){
 
   function getPortfolioData(){
-    const url = 'admin/scripts/portfolio_functions.php?allProjects=';
+    const url = 'admin/scripts/portfolio_functions.php';
 
   fetch(url)
     .then((resp) => resp.json())

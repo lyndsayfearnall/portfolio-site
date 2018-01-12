@@ -1,40 +1,35 @@
 <?php
 include('connect.php');
 
-if (isset($_GET["allProjects"])){
+  if (isset($_GET["project"])){
+    $project = $_GET["project"];
 
-    $query = "SELECT * FROM tbl_projects";
+    $query = "SELECT * FROM tbl_projects WHERE project_id = '$project'";
 
-    //get result
     $result = mysqli_query($link, $query);
 
-    //group results together
-    $grpResult = "";
-    echo "[";
-    while($row = mysqli_fetch_assoc($result)){
-      $jsonResult= json_encode($row);
-      $grpResult .= $jsonResult.",";
-    }
+    $row = mysqli_fetch_assoc($result);
 
-    echo substr($grpResult, 0, -1);
-    echo "]";
+    echo json_encode($row);
 
-    //close connection
     mysqli_close($link);
-}
 
-if (isset($_GET["project"])){
-  $project = $_GET["project"];
+  } else {
+      $query = "SELECT * FROM tbl_projects";
 
-  $query = "SELECT * FROM tbl_projects WHERE project_id = '$project'";
+      //get result
+      $result = mysqli_query($link, $query);
 
-  $result = mysqli_query($link, $query);
+      //group results together
+      $grpResult .= "[";
 
-  $row = mysqli_fetch_assoc($result);
+      while($row = mysqli_fetch_assoc($result)){
+        $grpResult .= json_encode($row).',';
+      }
 
-  echo json_encode($row);
-
-  mysqli_close($link);
-}
+      $grpResult .= "]";
+      $finalResult = substr($grpResult, 0, -2).']';
+      echo $finalResult;
+  }
 
  ?>
