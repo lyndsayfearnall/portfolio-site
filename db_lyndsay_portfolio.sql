@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jan 10, 2018 at 11:27 PM
+-- Generation Time: Jan 11, 2018 at 11:27 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.8
 
@@ -41,12 +41,12 @@ CREATE TABLE `tbl_projects` (
 --
 
 INSERT INTO `tbl_projects` (`project_id`, `project_name`, `project_image1`, `project_image2`, `project_image3`, `project_description`, `bckgrd_class`) VALUES
-(1, 'The Burrow Café', 'burrow_macbook_mockup.jpg', 'burrow_ipads_mockup.jpg', 'burrow_iphone_mockup.jpg', 'Responsive website designed for the Burrow Café. ', 'powder-blue'),
-(2, 'London Youth Advisory Council', 'lyac_macbook_mockup.jpg', 'lyac_ipads_mockup.jpg', 'lyac_iphone_mockup.jpg', 'Responsive website designed for the LYAC.', 'light-purple'),
-(3, 'Lord of the Rings', 'lotr_macbook_mockup.jpg', 'lotr_ipads_mockup.jpg', 'lotr_iphone_mockup.jpg', 'Responsive website designed for the Lord of the Rings.', 'teale'),
-(4, 'Julio Jones', 'officialize_macbook_mockup.jpg', 'officialize_ipads_mockup.jpg', 'officialize_iphone_mockup.jpg', 'Responsive website designed for Julio Jones.', 'dark-purple'),
-(5, 'Infinito', 'infinito_macbook_mockup.jpg', 'infinito_ipads_mockup.jpg', 'infinito_iphone_mockup.jpg', 'Responsive website designed for the Infinito.', 'powder-blue'),
-(6, 'Evolution Fitness and Nutrition', 'evolution_macbook_mockup.jpg', 'evolution_ipads_mockup.jpg', 'evolution_iphone_mockup.jpg', 'Responsive website designed for the Evolution.', 'light-purple');
+(1, 'The Burrow Café', 'burrow_macbook_mockup.jpg', 'burrow_ipads_mockup.jpg', 'burrow_iphone_mockup.jpg', 'Logo design, photography, responsive website design and development for the Burrow Café. For this project, I focused on creating a warm and whimsical feeling that invited customers into both the website and the café. ', 'powder-blue'),
+(2, 'London Youth Advisory Council', 'lyac_macbook_mockup.jpg', 'lyac_ipads_mockup.jpg', 'lyac_iphone_mockup.jpg', 'Responsive website created for the London Youth Advisory Council. This project was designed by me and developed by Emma Blue in order to provide a much-needed youthful update to the LYAC\'s existing Wordpress site.', 'light-purple'),
+(3, 'Lord of the Rings', 'lotr_macbook_mockup.jpg', 'lotr_ipads_mockup.jpg', 'lotr_iphone_mockup.jpg', 'This responsive website was built to commemorate the 15th Anniversary Release of the Lord of the Rings films. The site was built using Foundation.', 'teale'),
+(4, 'Julio Jones', 'officialize_macbook_mockup.jpg', 'officialize_ipads_mockup.jpg', 'officialize_iphone_mockup.jpg', 'This website was designed for NFL player Julio Jones for a school project. I contributed to both the design and development of this website.', 'dark-purple'),
+(5, 'Infinito', 'infinito_macbook_mockup.jpg', 'infinito_ipads_mockup.jpg', 'infinito_iphone_mockup.jpg', 'A website promoting Infinito Digital, a fictional design agency.  ', 'powder-blue'),
+(6, 'Evolution Fitness and Nutrition', 'evolution_macbook_mockup.jpg', 'evolution_ipads_mockup.jpg', 'evolution_iphone_mockup.jpg', 'A website to promote Evolution Fitness and Nutrition, a fictional online health and wellness service.', 'light-purple');
 
 --
 -- Indexes for dumped tables

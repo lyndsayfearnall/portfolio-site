@@ -40,17 +40,16 @@
          let output = '';
          output +=`
          <i class="material-icons" id="close-modal">close</i>
-         <h3 class="lightbox-title">${data.project_name}</h3>
+         <h4 class="lightbox-title">${data.project_name}</h4>
          <div class="accent-underline"></div>
          <p>${data.project_description}</p>
          <div class="col s12 ${data.bckgrd_class} lightbox-img"><img src="images/${data.project_image1}" alt="Desktop image of ${data.project_name} website" width="80%"></div>
          <div class="col s12 ${data.bckgrd_class} lightbox-img"><img src="images/${data.project_image2}" alt="iPad images of ${data.project_name} website" width="80%"></div>
-         <div class="col s12 ${data.bckgrd_class} lightbox-img"><img src="images/${data.project_image3}" alt="iPhone image of ${data.project_name} website" width="80%"></div>
+         <div class="col s12 ${data.bckgrd_class} lightbox-img" id="last"><img src="images/${data.project_image3}" alt="iPhone image of ${data.project_name} website" width="80%"></div>
          `;
 
          modal.innerHTML = output;
          modal.style.display="block";
-         window.scrollTo(0,0);
          document.body.style.overflow="hidden";
 
          //add event listener on close button
@@ -73,13 +72,14 @@ let navMenu = document.querySelector('#nav-button');
 
     function popUpNav(){
       navCon.style.display="block";
-      window.scrollTo(0,0);
+      //window.scrollTo(0,0);
       document.body.style.overflow="hidden";
     }
 
     navMenu.addEventListener('click', popUpNav, false);
 
     function closeNav(){
+      //navCon.classList.add("fadeOut");
       navCon.style.display="none";
       document.body.style.overflow="auto";
     }
