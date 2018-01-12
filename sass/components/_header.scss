@@ -3,30 +3,46 @@ nav{
   -webkit-box-shadow: none;
   box-shadow: none;
   margin-top: 0;
-  display: inline;
   ul{
     li{
       float: none;
-      display: inline;
-      a{
-        font-size: .6em;
-        margin-bottom: 1em;
-        //display: inline;
-
-      }
+      display: block;
     }
   }
 }
 
-nav ul li a:hover{
+#nav a{
+  padding: 0px 0px 3px 0px;
+  font-size: .6em;
+  display: inline;
+  position: relative;
+  transition: 0.3s ease-in;
+}
+
+#nav ul li a:hover{
     background-color: transparent;
-    color: $teale;
+}
+
+#nav ul li a:after{
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 4px solid $pink;
+  transition: 0.3s ease-out;
+}
+
+#nav ul li a:hover:after{
+  width: 100%;
+}
+
+#nav li{
+  margin-bottom: 2%;
 }
 
 #mainNav{
-  margin-top: 5%;
-  margin-left: 5%;
-  color: $pink;
   :hover{
     cursor: pointer;
     color: $dark-pink;
@@ -35,6 +51,14 @@ nav ul li a:hover{
 
 #nav-button{
   font-size: 4.375em;
+  margin-top: 4%;
+  margin-left: 4%;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition:0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  color: $pink;
+  cursor: pointer;
 }
 
 #nav-container{
@@ -54,7 +78,7 @@ nav ul li a:hover{
   display: none;
   overflow: scroll;
   -webkit-animation: 0.6s fadeUp;
-	-mox-animation: 0.6s fadeUp;
+	-moz-animation: 0.6s fadeUp;
 	-o-animation: 0.6s fadeUp;
 	animation: 0.6s fadeUp;
   a{
@@ -87,39 +111,22 @@ nav ul li a:hover{
   }
 }
 
-#nav{
-  //margin-top: 35%;
-  li{
-    margin-top: 10%;
-  }
-}
 
 #nav-close{
   color: $pink;
   cursor: pointer;
   font-size: 1em;
-  margin-top: 3%;
+  margin-top: 6%;
+  margin-left: 6%;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition:0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
-// .slideLr a:after
-// {
-// 	content: '';
-// 	display: block;
-// 	height: 2px;
-// 	width: 0;
-// 	background: transparent;
-// 	-webkit-transition: width .4s ease, background-color .4s ease;
-// 	-moz-transition: width .4s ease, background-color .4s ease;
-// 	-o-transition: width .4s ease, background-color .4s ease;
-// 	transition: width .4s ease, background-color .4s ease;
-// }
-//
-// .slideLr a:hover:after
-// {
-// 	width: 100%;
-// 	background: #b3426c;
-// }
-
+#nav-close:hover{
+  color: $dark-pink;
+}
 
 @media screen and (min-width: 750px){
   #nav-button{
@@ -137,12 +144,17 @@ nav ul li a:hover{
 
 @media screen and (min-width: 1000px){
   #nav-button{
-    margin-left: 3px;
+    margin-left: 6%;
+    margin-top: 6%;
   }
   #nav{
     li{
       font-size:1.5em;
-      margin-top: 0;
+      //margin-top: 0;
     }
+  }
+  #nav-close{
+    margin-top: 3%;
+    margin-left: 3%;
   }
 }

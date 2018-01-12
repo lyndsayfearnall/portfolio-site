@@ -72,14 +72,12 @@ let navMenu = document.querySelector('#nav-button');
 
     function popUpNav(){
       navCon.style.display="block";
-      //window.scrollTo(0,0);
       document.body.style.overflow="hidden";
     }
 
     navMenu.addEventListener('click', popUpNav, false);
 
     function closeNav(){
-      //navCon.classList.add("fadeOut");
       navCon.style.display="none";
       document.body.style.overflow="auto";
     }
