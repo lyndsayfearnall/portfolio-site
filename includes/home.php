@@ -1,5 +1,5 @@
 <section id="home">
-  <h2 class="hidden">Lyndsay Fearnall</h2>
+  <h2 class="hidden">Home Page</h2>
   <div class="container row">
 
     <img src="assets/logo.svg" alt="Lyndsay Fearnall's Logo" id="logo">

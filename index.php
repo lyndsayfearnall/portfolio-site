@@ -13,6 +13,7 @@
   <title>Lyndsay Fearnall</title>
 </head>
 <body>
+  <h1 class="hidden">Lyndsay Fearnall</h1>
 
 <!--Header-->
 <div id="home-background">
@@ -43,7 +44,7 @@
 <!--Footer Section-->
   <footer>
     <div class="container">
-      <p> &copy
+      <p> &copy;
         <?php echo date('Y'); ?>
         designed and developed by Lyndsay Fearnall
       </p>

@@ -34,11 +34,11 @@ $msgClass = ''; //add class to message, style with css
 
 <section id="contact">
   <div class="container">
+
     <div class="row no-margin-bottom" id="contact-text">
       <div class="col s12">
-        <h2>Say <span class="title-bold">hello</span>
+        <h2>Say <span class="title-bold">hello</span></h2>
           <div class="title-underline"></div>
-        </h2>
       </div>
 
       <div class="col s10 offset-s1">
@@ -57,31 +57,33 @@ $msgClass = ''; //add class to message, style with css
             </div>
           </div>
         <?php endif; ?>
+
         <div class="row no-margin-bottom">
           <div class="input-field col s10 offset-s1" id="form-name">
-            <input placeholder="Your Name" id="name" type="text" name="name" value="<?php echo isset($_POST['name']) ? $name : ''; ?>"></input>
+            <input placeholder="Your Name" id="name" type="text" name="name" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
           </div>
 
           <div class="input-field col s10 offset-s1" id="form-email">
-            <input placeholder="Your Email Address" id="email" type="email" name="email" value="<?php echo isset($_POST['email']) ? $email : ''; ?>"></input>
+            <input placeholder="Your Email Address" id="email" type="email" name="email" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
           </div>
 
           <div class="hidden">
-            <label for="street">Street: </label><input id="street" type="text" name="street"></input>
+            <label for="street">Street: </label><input id="street" type="text" name="street">
           </div>
 
           <div class="input-field col s10 offset-s1" id="form-text">
             <textarea placeholder="Message" id="textarea1" class="materialize-textarea" name="message"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
           </div>
 
-
           <div class="input-field col s6 offset-s3 center-align">
             <button class="btn waves-effect waves-light" type="submit" name="action" id="sumbit"> Send
               <i class="material-icons right">send</i>
             </button>
-
+          </div>
         </div>
+
       </form>
     </div>
+
   </div>
 </section>
