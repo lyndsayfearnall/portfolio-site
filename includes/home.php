@@ -8,14 +8,15 @@
       <p>I’m a front-end website developer and interactive media designer located in London, Ontario</p>
     </div>
     <div class="col s8 offset-s2 center-align" id="view-work">
-      <button class="btn btn-large"><a href="#portfolio">View My Work</a></button>
+      <a class="btn-large" href="#portfolio">View My Work</a>
     </div>
-          <img src="assets/blue_keyboard.svg" alt="Laptop keyboard" id="keyboard">
-
-          <img src="assets/blue_notebook.svg" alt="Notebook" id="notebook">
-
-          <img src="assets/blue_mug.svg" alt="Mug" id="mug">
-
-          <img src="assets/blue_headphones.svg" alt="Headphones" id="headphones">
   </div>
 </section>
+
+<img src="assets/blue_keyboard.svg" alt="Laptop keyboard" id="keyboard">
+
+<img src="assets/blue_notebook.svg" alt="Notebook" id="notebook">
+
+<img src="assets/blue_mug.svg" alt="Mug" id="mug">
+
+<img src="assets/blue_headphones.svg" alt="Headphones" id="headphones">

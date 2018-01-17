@@ -72,6 +72,28 @@ a{
   background-color: $dark-pink;
 }
 
+//large button
+.btn-large{
+  background-color: $pink;
+  margin-top: 2%;
+}
+
+.btn-large:visited{
+  background-color: $pink;
+}
+
+.btn-large:hover {
+  background-color: $dark-pink;
+}
+
+.btn-large:active{
+  background-color: $dark-pink;
+}
+
+.btn-large:focus{
+  background-color: $dark-pink;
+}
+
 @media screen and (min-width: 750px)
 {
   h2{

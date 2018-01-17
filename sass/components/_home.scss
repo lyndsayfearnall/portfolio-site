@@ -20,6 +20,7 @@ position: relative;
   p{
     text-align: center;
     margin-top: 5%;
+    font-size: 1em;
   }
 }
 
@@ -27,7 +28,7 @@ position: relative;
   position: absolute;
   width: 20%;
   left:0;
-  top:60%;
+  top:65%;
 }
 
 #mug{
@@ -39,7 +40,7 @@ position: relative;
 
 #notebook{
   position: absolute;
-  width: 45%;
+  width: 40%;
   top: 80%;
   left: 0;
 }
@@ -53,11 +54,54 @@ position: relative;
 
 
 //MEDIA QUERIES START HERE
-@media screen and (min-width: 750px){
+
+//mobile view LANDSCAPE
+@media screen
+  and (min-width: 320px)
+  and (orientation: landscape) {
+  #headphones{
+    width: 12%;
+    top: 55%;
+  }
+  #logo{
+    margin-top: 0%;
+    width: 50%;
+    margin-left: 25%;
+  }
+  #keyboard{
+    width: 30%;
+    margin-left: 30%;
+  }
+  #mug{
+    width: 12%;
+  }
+  #notebook{
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 375px)
+and (orientation: portrait){
+  #logo{
+    margin-top: 35%;
+  }
+}
+
+@media screen
+  and (min-width: 500px)
+  and (orientation: landscape) {
+  #home-background{
+    min-height: 350px;
+  }
+}
+
+@media screen and (min-width: 600px)
+and (orientation: portrait)
+{
   #logo{
     width: 70%;
     margin-left: 15%;
-    margin-top: 30%;
+    top: 40%;
   }
   #home p{
     font-size: 1.7em;
@@ -77,39 +121,54 @@ position: relative;
   }
 }
 
-//mobile view LANDSCAPE
-@media screen
-  and (min-width: 320px)
-  //and (max-width: 1024px) //ipad mini
-  and (orientation: landscape) {
-  #headphones{
-    width: 15%;
-  }
-  #logo{
-    margin-top: 0px;
-    width: 40%;
-    margin-left: 30%;
-  }
+//iphone x
+@media screen and (min-width: 800px)
+and (orientation: landscape){
   #keyboard{
     width: 25%;
-    margin-left: 30%;
   }
-  #mug{
-    width: 15%;
-  }
-  #notebook{
-    width: 25%;
+
+  #logo{
+    width: 35%;
+    margin-left: 32.5%;
   }
 }
 
-@media screen and (min-width: 1020px){
+@media screen
+  and (min-width: 960px)
+  and (orientation: landscape) {
+  #headphones{
+    width: 12%;
+    top: 55%;
+  }
+  #logo{
+    margin-top: 0px;
+    width: 50%;
+    margin-left: 25%;
+  }
+  #keyboard{
+    width: 30%;
+    margin-left: 30%;
+  }
+  #mug{
+    width: 12%;
+  }
+  #notebook{
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  #home-background{
+    min-height: 600px;
+  }
   #logo{
     width: 60%;
     margin-left: 20%;
     margin-top: 10%;
   }
   #keyboard{
-    width: 30%;
+    width: 25%;
   }
   #notebook{
     width: 17%;
@@ -123,5 +182,62 @@ position: relative;
   }
   #home p{
     font-size: 1.4em;
+  }
+}
+
+//ipad pro
+@media screen and (min-width: 1024px)
+and (min-height: 768px)
+and (orientation: landscape)
+{
+  #logo{
+    margin-top: 20%;
+  }
+}
+
+@media only screen
+  and (min-width: 1024px)
+  and (max-width: 1024px)
+  and (orientation: portrait)
+  {
+    #home p{
+      font-size: 1.9em;
+    }
+    #logo{
+      margin-top: 45%;
+      width: 100%;
+      margin-left: 0%;
+    }
+    #keyboard{
+      width: 35%;
+    }
+    #notebook{
+      width: 20%;
+      top: 90%;
+    }
+    #headphones{
+    top: 80%;
+    }
+    #mug{
+      bottom: 5%;
+      right: 5%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+  #home-background{
+    min-height:650px;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  #home-background{
+    min-height:850px;
+  }
+}
+
+@media screen and (min-width: 2500px){
+  #home-background{
+    min-height:950px;
   }
 }
