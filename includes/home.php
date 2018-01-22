@@ -13,10 +13,10 @@
   </div>
 </section>
 
-<img src="assets/blue_keyboard.svg" alt="Laptop keyboard" id="keyboard">
+<img src="assets/blue_keyboard_2.svg" alt="Laptop keyboard" id="keyboard">
 
-<img src="assets/blue_notebook.svg" alt="Notebook" id="notebook">
+<img src="assets/blue_notebook_2.svg" alt="Notebook" id="notebook">
 
-<img src="assets/blue_mug.svg" alt="Mug" id="mug">
+<img src="assets/blue_mug_2.svg" alt="Mug" id="mug">
 
-<img src="assets/blue_headphones.svg" alt="Headphones" id="headphones">
+<img src="assets/blue_headphones_2.svg" alt="Headphones" id="headphones">

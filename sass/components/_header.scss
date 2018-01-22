@@ -11,6 +11,10 @@ nav{
   }
 }
 
+#nav{
+  margin-top: 15vh;
+}
+
 #nav a{
   padding: 0px 0px 3px 0px;
   font-size: .6em;
@@ -50,13 +54,18 @@ nav{
 }
 
 #nav-button{
+  float: right;
+  position: fixed;
+  right: 0px;
+  top: 0px;
   font-size: 4.375em;
   margin-top: 4%;
-  margin-left: 4%;
+  margin-right: 4%;
   -webkit-transition: 0.3s ease-out;
   -moz-transition:0.3s ease-out;
   -o-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+  z-index: 100;
   color: $pink;
   cursor: pointer;
 }
@@ -70,7 +79,7 @@ nav{
   text-transform: uppercase;
   font-family: $ms;
   font-size: 2em;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -115,9 +124,10 @@ nav{
 #nav-close{
   color: $pink;
   cursor: pointer;
+  float: right;
   font-size: 1em;
   margin-top: 6%;
-  margin-left: 6%;
+  margin-right: 6%;
   -webkit-transition: 0.3s ease-out;
   -moz-transition:0.3s ease-out;
   -o-transition: 0.3s ease-out;
@@ -130,7 +140,7 @@ nav{
 
 @media screen and (min-width: 750px){
   #nav-button{
-    font-size: 6em;
+    font-size: 7em;
   }
   #nav-close{
     font-size: 2em;
@@ -144,8 +154,8 @@ nav{
 
 @media screen and (min-width: 1000px){
   #nav-button{
-    margin-left: 6%;
-    margin-top: 6%;
+    margin-left: 0;
+    margin-top: 3%;
   }
   #nav{
     li{

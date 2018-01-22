@@ -1,5 +1,4 @@
 #contact{
-  height: 95vh;
   display: block;
   overflow: auto;
   // background-color: $blue;
@@ -39,6 +38,12 @@
   background-color: $pink;
   width: 100px;
   height: 75px;
+}
+
+@media screen and (min-width: 375px) {
+  #contact{
+    height: 95vh;
+  }
 }
 
 @media screen and (min-width:750px){

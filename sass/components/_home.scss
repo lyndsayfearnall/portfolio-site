@@ -12,7 +12,7 @@ position: relative;
 #logo{
   width: 90%;
   margin-left: 5%;
-  margin-top: 25%;
+  margin-top: 45%;
   display: block;
 }
 
@@ -27,14 +27,14 @@ position: relative;
 #headphones{
   position: absolute;
   width: 20%;
-  left:0;
+  right:0;
   top:65%;
 }
 
 #mug{
   position: absolute;
   bottom: 1em;
-  right: 0.6em;
+  left: 0.6em;
   width: 25%;
 }
 
@@ -42,14 +42,14 @@ position: relative;
   position: absolute;
   width: 40%;
   top: 80%;
-  left: 0;
+  right: 0;
 }
 
 #keyboard{
   position: absolute;
   width:50%;
   top:0;
-  right: 0;
+  margin-left: 0px;
 }
 
 
@@ -64,13 +64,13 @@ position: relative;
     top: 55%;
   }
   #logo{
-    margin-top: 0%;
+    margin-top: 18%;
     width: 50%;
     margin-left: 25%;
   }
   #keyboard{
     width: 30%;
-    margin-left: 30%;
+    //margin-left: 30%;
   }
   #mug{
     width: 12%;
@@ -83,7 +83,13 @@ position: relative;
 @media screen and (min-width: 375px)
 and (orientation: portrait){
   #logo{
-    margin-top: 35%;
+    margin-top: 55%;
+  }
+  .btn-large{
+    margin-top: 15px;
+  }
+  #home p{
+    font-size: 1.2em;
   }
 }
 
@@ -116,9 +122,6 @@ and (orientation: portrait)
   #mug{
     width: 17%;
   }
-  #keyboard{
-
-  }
 }
 
 //iphone x
@@ -142,13 +145,12 @@ and (orientation: landscape){
     top: 55%;
   }
   #logo{
-    margin-top: 0px;
+    //margin-top: 0px;
     width: 50%;
     margin-left: 25%;
   }
   #keyboard{
     width: 30%;
-    margin-left: 30%;
   }
   #mug{
     width: 12%;
@@ -165,7 +167,7 @@ and (orientation: landscape){
   #logo{
     width: 60%;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: 20%;
   }
   #keyboard{
     width: 25%;
@@ -185,16 +187,6 @@ and (orientation: landscape){
   }
 }
 
-//ipad pro
-@media screen and (min-width: 1024px)
-and (min-height: 768px)
-and (orientation: landscape)
-{
-  #logo{
-    margin-top: 20%;
-  }
-}
-
 @media only screen
   and (min-width: 1024px)
   and (max-width: 1024px)
@@ -204,7 +196,7 @@ and (orientation: landscape)
       font-size: 1.9em;
     }
     #logo{
-      margin-top: 45%;
+      margin-top: 60%;
       width: 100%;
       margin-left: 0%;
     }
@@ -224,6 +216,16 @@ and (orientation: landscape)
     }
 }
 
+@media only screen
+  and (min-width: 1366px)
+  and (max-width: 1366px)
+  and (orientation: landscape)
+  {
+    #logo{
+      margin-top: 35%;
+    }
+}
+
 @media screen and (min-width: 1200px){
   #home-background{
     min-height:650px;
@@ -232,7 +234,25 @@ and (orientation: landscape)
 
 @media screen and (min-width: 1400px){
   #home-background{
+    min-height:750px;
+  }
+}
+
+@media screen and (min-width: 1800px){
+  #home-background{
     min-height:850px;
+  }
+  #keyboard{
+    max-width: 50vh;
+  }
+  #mug{
+    max-width: 25vh;
+  }
+  #notebook{
+    max-width: 25vh;
+  }
+  #headphones{
+    max-width: 15vh;
   }
 }
 

@@ -39,9 +39,12 @@
        .then((data) => {
          let output = '';
          output +=`
+         <div class="col s12">
          <i class="material-icons" id="close-modal">close</i>
-         <h4 class="lightbox-title">${data.project_name}</h4>
+         </div>
+         <div class="col s12"><h4 class="lightbox-title">${data.project_name}</h4>
          <div class="accent-underline"></div>
+         </div>
          <p>${data.project_description}</p>
          <div class="col s12 ${data.bckgrd_class} lightbox-img"><img src="images/${data.project_image1}" alt="Desktop image of ${data.project_name} website" width="80%"></div>
          <div class="col s12 ${data.bckgrd_class} lightbox-img"><img src="images/${data.project_image2}" alt="iPad images of ${data.project_name} website" width="80%"></div>
@@ -87,5 +90,26 @@ let navMenu = document.querySelector('#nav-button');
     });
 
     close.addEventListener('click', closeNav, false);
+
+//shrink nav on scroll
+    function scrollShrink(){
+      if(window.scrollY >= 100 && window.matchMedia("(max-width: 749px)").matches){
+        navMenu.style.fontSize = "2em";
+        navMenu.style.backgroundColor = "rgba(255, 255, 255, 0.25)";
+        navMenu.style.borderRadius = "50%";
+      }else if (window.scrollY < 100 && window.matchMedia("(max-width: 749px)").matches){
+        navMenu.style.fontSize = "4.375em";
+        navMenu.style.backgroundColor = "transparent";
+      } else if(window.scrollY >=100 && window.matchMedia("(min-width: 750px)").matches){
+        navMenu.style.fontSize = "3em";
+        navMenu.style.backgroundColor = "rgba(255, 255, 255, 0.25)";
+        navMenu.style.borderRadius = "50%";
+      }else{
+        navMenu.style.fontSize = "7em";
+        navMenu.style.backgroundColor = "transparent";
+      }
+    }
+
+    window.addEventListener("scroll", scrollShrink);
 
 })();

@@ -1,6 +1,6 @@
 <header id="mainHeader">
   <div class="row">
-    <div class="col s3" id="mainNav">
+    <div class="col s3 offset-s9" id="mainNav">
       <i class="material-icons" id="nav-button">menu</i>
     </div>
   </div>
@@ -8,8 +8,11 @@
 
 <div id="nav-container">
 
+  <div class="row">
+    <i class="material-icons" id="nav-close">close</i>
+  </div>
+
   <div class="col s12">
-      <i class="material-icons" id="nav-close">close</i>
     <div id="nav">
       <ul class="center-align">
         <li class="slideLr"><a href='#home' class="nav-list">Home</a></li>
